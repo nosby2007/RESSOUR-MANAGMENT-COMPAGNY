@@ -12,6 +12,9 @@ import { ManageProjectComponent } from './manage-project/manage-project.componen
 import { ManageUsersComponent } from './manage-users/manage-users.component';
 import { NewUserComponent } from './new-user/new-user.component';
 import { NarvbarComponent } from './narvbar/narvbar.component';
+import { NewProjectComponent } from './new-project/new-project.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -24,11 +27,14 @@ import { NarvbarComponent } from './narvbar/narvbar.component';
     ManageProjectComponent,
     ManageUsersComponent,
     NewUserComponent,
-    NarvbarComponent
+    NarvbarComponent,
+    NewProjectComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
