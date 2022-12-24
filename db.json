@@ -1,0 +1,50 @@
+{
+  "productList": [
+    {
+      "productName": "apple",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 100,
+      "comment": "just whaouuu",
+      "date": "2022-12-23T20:00:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "peanaple",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 500,
+      "comment": "very nice fruit",
+      "date": "2022-12-23T20:00:00.000Z",
+      "id": 2
+    },
+    {
+      "productName": "mango",
+      "category": "Fruits",
+      "freshness": "second Hand",
+      "price": 200,
+      "comment": "this not fresh product",
+      "date": "2022-12-28T20:00:00.000Z",
+      "id": 3
+    },
+    {
+      "productName": "cassava",
+      "category": "Vegetables",
+      "freshness": "Brand New",
+      "price": 2000,
+      "comment": "not a new product",
+      "date": "2022-12-22T20:00:00.000Z",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

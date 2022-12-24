@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg">
+            <h1 mat-dialog-title>Add product Form</h1>
+<div mat-dialog-content>
+    <form [formGroup]="productForm">
+        <mat-form-field appearence="outline">
+            <mat-label>Product Name</mat-label>
+            <input formControlName="productName" matInput placeholder="Name"/>
+        </mat-form-field>
+        <mat-form-field appearence="outline">
+            <mat-label>Product Category</mat-label>
+            <mat-select formControlName="category" placeholder="Category">
+                <mat-option value="Fruits">Fruits</mat-option>
+                <mat-option value="Vegetables">Vegetable</mat-option>
+                <mat-option value="Electronics">Electronic</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearence="outline">
+            <mat-label>Chose a Date</mat-label>
+            <input formControlName="date" matInput [matDatepicker]="picker"/>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <label for=""><h1 class="text-primary tw-bold">Fresh Product</h1></label>
+        <mat-radio-group formControlName="freshness" class="exemple-radio-group" >
+            <mat-radio-button class="exemple-radio-button" *ngFor="let fresh of freshnessList" [value]="fresh">
+                {{fresh}}
+            </mat-radio-button>
+        </mat-radio-group>
+        <mat-form-field appearence="outline">
+            <mat-label>Price </mat-label>
+            <input formControlName="price" matInput type="number" placeholder="Price"/>
+        </mat-form-field>
+        <mat-form-field appearence="outline">
+            <mat-label>comment</mat-label>
+            <textarea formControlName="comment" matInput></textarea>
+        </mat-form-field>
+    </form>
+    <div mat-dialo-action [align]="'end'">
+        <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+        <button mat-raised-button class="m-2 btn-outline" color="primary" (click)="addProduct()">Save</button>
+    </div>
+</div>
+        </div>
+        <div class="col shadow bg-body">
+            <h1>please fill all the fields.</h1>
+            <p>Thank to fill all the fields. so you can have the report</p>
+        </div>
+    </div>
+</div>
